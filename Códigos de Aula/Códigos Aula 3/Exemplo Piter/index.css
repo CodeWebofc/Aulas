@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+
+:root{
+    --color-1: #1B3C53;
+    --color-text: #E5E0D8;
+    --color-hover: #98A1BC;
+    --color-card: #3674B5;
+    --color-shadow: #63C8FF;
+    --color-button: #093FB4;
+    --font-card: "Libertinus Mono", monospace;
+}
+
+#img-1{
+    width: 50px;
+}
+
+body{
+    background-color: var(--color-1);
+}
+
+.navbar{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.textos{
+    border-bottom: 2px solid #E5E0D8;
+    width: 100%;
+    margin: 0;
+}
+
+#nav-1:hover, #nav-2:hover, #nav-3:hover, #nav-4:hover{
+    color: var(--color-hover);
+    cursor: grab;
+}
+
+.card-text1{
+    background-color: var(--color-card);
+    width: 50%;
+    height: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;   
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0px 10px 5px var(--color-shadow);
+}
+
+.card-text{
+    display: flex;
+    justify-content: center;
+    color: var(--color-text);
+    text-align: center; 
+}
+
+.img-introducao{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#img-exem{
+    width: 25%;
+    clip-path: circle(40%);
+}
+
+.text-card{
+    font-weight: bold;
+    font-family: var(--font-card);
+    font-style: normal;
+}
+
+#nome, #email, #telefone{
+    color: var(--color-text);
+    font-family: var(--font-card);
+}
+
+#input-text{
+    border-radius: 5px;
+}
+
+#salvar{
+    font-family: var(--font-card);
+    width: 50%;
+    height: 10%;
+    margin-top: 5px;
+    background-color: var(--color-button);
+    border-radius: 5px;
+    color: var(--color-text);
+}
+
+.div-button{
+    display: flex;
+    justify-content: center;
+}
+
+#form-1{
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    width: 30%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: var(--color-card);
+    border-radius: 60px;
+    box-shadow: 0px 10px 5px var(--color-shadow);
+}
+
+.div-form{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    color: var(--color-text);
+}
