@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.position-example {
+  margin-bottom: 60px;
+}
+
+.box {
+  width: 250px;
+  height: 80px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Relative */
+.relative {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: steelblue;
+}
+
+/* Absolute */
+.absolute-container {
+  position: relative;
+  height: 120px;
+  background-color: #eee;
+}
+.absolute {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: crimson;
+}
+
+/* Fixed */
+.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: seagreen;
+}
+
+/* Sticky */
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: orange;
+  z-index: 5;
+}
+
+/* Z-index */
+.z-container {
+  position: relative;
+  height: 100px;
+}
+
+.z-low {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: navy;
+  z-index: 1;
+}
+
+.z-high {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  background-color: gold;
+  color: black;
+  z-index: 10;
+}

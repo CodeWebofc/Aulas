@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.relative {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: lightgreen;
+  color: black;
+}
+
+.container {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  background-color: lightgray;
+  margin: 20px 0;
+}
+
+.absolute {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: tomato;
+  color: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: orange;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: gold;
+  padding: 10px;
+  font-weight: bold;
+}

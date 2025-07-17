@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Position e Z-Index</title>
+  <link rel="stylesheet" href="slide4.css" />
+</head>
+<body>
+  <h1>Exemplos de Position e Z-Index</h1>
+
+  <section class="position-example">
+    <h2>Position: relative</h2>
+    <div class="box relative">Caixa com position: relative</div>
+  </section>
+
+  <section class="position-example">
+    <h2>Position: absolute</h2>
+    <div class="absolute-container">
+      <div class="box absolute">Caixa com position: absolute</div>
+    </div>
+  </section>
+
+  <section class="position-example">
+    <h2>Position: fixed</h2>
+    <div class="box fixed">Esta caixa fica fixa no canto inferior</div>
+  </section>
+
+  <section class="position-example">
+    <h2>Position: sticky</h2>
+    <div class="box sticky">Caixa com position: sticky (fixa no topo ao rolar)</div>
+  </section>
+
+  <section class="position-example">
+    <h2>Z-Index</h2>
+    <div class="z-container">
+      <div class="box z-low">Z-index: 1</div>
+      <div class="box z-high">Z-index: 10</div>
+    </div>
+  </section>
+
+  <div style="height: 1000px;"></div> <!-- espaço para testar o sticky e fixed -->
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.box {
+  width: 300px;
+  height: 100px;
+  margin-bottom: 40px;
+  border: 2px solid #333;
+  padding: 10px;
+}
+
+.content {
+  width: 400px; /* maior que o container para provocar overflow */
+  background-color: lightblue;
+  padding: 5px;
+}
+
+.visible .content {
+  overflow: visible;
+}
+
+.hidden .content {
+  overflow: hidden;
+}
+
+.scroll .content {
+  overflow: scroll;
+}
+
+.auto .content {
+  overflow: auto;
+}
