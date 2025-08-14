@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- JS externo -->
+</head>
+
+<body>
+    
+    <header>
+        <h1>
+            <img src="https://tse2.mm.bing.net/th/id/OIP.aUc9PTY-as9mUqy0y5V9bwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ícone Lista" width="30">
+            Minha Lista de Tarefas
+        </h1>
+        <a href="#">Sobre</a>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Todas</a></li>
+            <li><a href="#">Pendentes</a></li>
+            <li><a href="#">Concluídas</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <form id="form-adic-tarefa">
+            <input type="text" placeholder="Digite uma nova tarefa" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        
+        <ul id="lista-tarefas">
+            <li class="pendente">
+                Comprar pão
+                <div>
+                    <button class="concluir">Concluir</button>
+                    <button class="deletar">Deletar</button>
+                </div>
+            </li>
+            
+            <li class="concluida">
+                Estudar HTML
+                <div>
+                    <button class="desfazer">Desfazer</button>
+                    <button class="deletar">Deletar</button>
+                </div>
+            </li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Total</th>
+                    <th>Pendentes</th>
+                    <th>Concluídas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    
+    <footer>
+        <p>Projeto Prático 01 - Aula 05</p>
+    </footer>
+    
+</body>
+</html>
