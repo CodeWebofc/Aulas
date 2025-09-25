@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Explicando Git</h1>
+</body>
+</html>
+parte 1
+----
+git add exemplo.txt
+git commit -m "primeiro commit"
+git status
+-----
+
+parte 2
+----
+git status
+git add exemplo.txt
+git commit -m "adiciona segunda linha"
+git log --oneline
+----
+
+parte 3 (conecta local ao GitHub)
+----
+git remote add origin https://github.com/usuario/meu-projeto.git
+git branch -M main
+git push -u origin main
+----
+
+parte 4 (sincorniza alterações locais com o repositório remoto)
+----
+git pull origin main
+
+(puxar alterações locais) - 
+git add .
+git commit -m "mensagem"
+git push origin main
+----
+
+parte 5 (branches)
+----
+git checkout -b nova-feature (cria branch)
+
+git add exemplo.txt (adiciona arquivo na branch nova-feature)
+git commit -m "adiciona nova feature" (adiciona commit na branch nova-feature)
+
+git checkout main (volta para a branch main)
+
+git merge nova-feature (une a branch nova-feature na main)
+git push origin main (envia alterações para o repositório remoto)
+------
+
+git add (prepara para commit)
+
+git commit (registra no histórico)
+
+git push (envia) / git pull (baixa)
