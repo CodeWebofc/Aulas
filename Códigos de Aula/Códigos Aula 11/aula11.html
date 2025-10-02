@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva com Medidas Relativas</title>
+    <style>
+        /* Definindo a base da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 2em; /* O padding será proporcional ao tamanho da fonte */
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4vw; /* A fonte vai ser 4% da largura da tela */
+        }
+
+        /* Conteúdo principal */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 5vw;
+        }
+
+        .card {
+            width: 30%;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+            padding: 1em; /* O padding será 3 vezes o tamanho da fonte */
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Títulos dentro dos cards */
+        .card h2 {
+            font-size: 2em; /* 2 vezes o tamanho da fonte base */
+            margin-bottom: 1em;
+        }
+
+        /* Texto dentro dos cards */
+        .card p {
+            font-size: 1.2em; /* 1.2 vezes o tamanho da fonte base */
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 3vh 0; /* A altura do padding será 3% da altura da tela */
+            text-align: center;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .card {
+                width: 80%; /* As cards vão ocupar 80% da largura da tela em telas pequenas */
+                padding: 2em;
+            }
+
+            header h1 {
+                font-size: 6vw; /* O título vai aumentar um pouco em telas menores */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Exemplo de Página Responsiva</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>Este é um exemplo de conteúdo em um card, com unidades relativas.</p>
+        </div>
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>O tamanho dos elementos aqui depende de unidades relativas, como vw e em.</p>
+        </div>
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>O layout vai se ajustar ao tamanho da tela com a ajuda de media queries.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Rodapé do exemplo</p>
+    </footer>
+
+</body>
+</html>
